@@ -117,25 +117,22 @@ function showLeaderboard() {
       ? JSON.parse(localStorage.getItem("highScores"))
       : [];
   
-    highScores.push(score);
+    const initials = prompt("Enter your initials:");
+    
+    const entry = {
+      initials,
+      score
+    };
+    
+    highScores.push(entry);
   
-    highScores.sort((a, b) => b - a);
+    highScores.sort((a, b) => b.score - a.score);
   
     while (highScores.length > 5) {
       highScores.pop();
     }
   
-    const initials = prompt("Enter your initials:");
-  
-    const entry = {
-      initials,
-      score
-    };
-  
-    highScores.push(entry);
-  
-    localStorage.setItem("highScores", JSON.stringify(highScores));
-  
+    localStorage.setItem("highScores", JSON.stringify(highScores)); 
     const leaderboardHTML = `
       <h2>High Scores</h2>
       <ol>
@@ -146,13 +143,24 @@ function showLeaderboard() {
           )
           .join("")}
       </ol>
-      <button onclick="location.reload()">Try Again</button>
+      <button onclick="goHome()">Try Again</button>
+      <button onclick="clearLeaderboard()">Clear Leaderboard</button>
     `;
   
     quizContainer.innerHTML = leaderboardHTML;
-  }
-  
-  
+  } 
+
+// Clear leaderboard 
+function clearLeaderboard() {
+    localStorage.clear();
+    leaderboard.innerHTML = ""; 
+    window.location.reload;
+}  
+
+// Function to take user back to homepage
+function goHome() {
+    window.location.href = "index.html";
+} 
 
 // Initialize quiz
 questionEl.innerHTML = "Press the start button to begin the quiz.";
@@ -160,4 +168,4 @@ messageEl.style.display = "none";
 resultEl.style.display = "none";
 nextButtonEl.style.display = "none";
 startButtonEl.addEventListener("click", beginQuiz);
-nextButtonEl.addEventListener("click", nextQuestion);        
+nextButtonEl.addEventListener("click", nextQuestion); 
