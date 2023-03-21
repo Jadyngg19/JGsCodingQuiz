@@ -1,3 +1,7 @@
+body {
+    background-color: #dadada;
+}
+
 h1 {
     font-family:'Gabriola', serif;
     text-align: center;
@@ -59,7 +63,7 @@ p {
 
  .quizContainer {
     display: block;
-    background-color: white;
+    background-color: #dadada;
     border-radius: 6px;
     width: 75%;
     margin: auto;

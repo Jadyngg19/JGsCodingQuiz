@@ -121,8 +121,7 @@ function nextQuestion() {
     } else {
         showQuestion();
         messageEl.style.display = "none";
-        nextButtonEl.style.display = "none";
-        startButtonEl.style.display = "block";
+        nextButtonEl.style.display = "none"; 
     }
 }
 
@@ -178,8 +177,12 @@ function showLeaderboard() {
 // Clear leaderboard 
 function clearLeaderboard() {
     localStorage.clear();
-    leaderboard.innerHTML = ""; 
-    window.location.reload;
+    quizContainer.innerHTML = `
+    <h2>High Scores</h2>
+    <ol></ol>
+    <button onclick="goHome()">Try Again</button>
+    <button onclick="alert("Leaderboard has already been cleared")">Clear Leaderboard</button>
+    `; 
 }  
 
 // Function to take user back to homepage
@@ -188,7 +191,7 @@ function goHome() {
 } 
 
 // Initialize quiz
-questionEl.innerHTML = "Press the start button to begin the quiz.";
+questionEl.innerHTML = `<br />Press the start button to begin the quiz.`;
 messageEl.style.display = "none";
 resultEl.style.display = "none";
 nextButtonEl.style.display = "none";
