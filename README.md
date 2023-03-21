@@ -20,3 +20,4 @@ The JavaScript Quiz is built using HTML, CSS, and JavaScript. The quiz uses DOM 
 ![High Score Leaderboard](./Images/High-Score-Leaderboard.png)
 
 ## Link
+[JG's Javascript Quizer](https://jadyngg19.github.io/JGsCodingQuiz/)
