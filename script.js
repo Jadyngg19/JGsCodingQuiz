@@ -1,30 +1,55 @@
 // Quiz questions and answers
 const questions = [
     {
-        question: "What is the capital of France?",
-        choices: ["Paris", "London", "Berlin"],
+        question: "What is JavaScript?",
+        choices: ["A server-side language", "A client-side language", "A database language"],
+        correctAnswer: 1
+    },
+    {
+        question: "Which of the following is NOT a primitive data type in JavaScript?",
+        choices: ["String", "Boolean", "Array"],
+        correctAnswer: 2
+    },
+    {
+        question: "What is the keyword used to declare a variable in JavaScript?",
+        choices: ["var", "let", "const"],
         correctAnswer: 0
     },
     {
-        question: "What is the highest mountain in the world?",
-        choices: ["K2", "Mount Everest", "Makalu"],
-        correctAnswer: 1
-    },
-    {
-        question: "What is the currency of Japan?",
-        choices: ["Yen", "Dollar", "Euro"],
+        question: "What does the '===' operator do in JavaScript?",
+        choices: ["It checks if two values are equal in value and data type.", "It checks if two values are equal in value but not necessarily in data type.", "It assigns a value to a variable."],
         correctAnswer: 0
     },
     {
-        question: "What is the largest country in the world?",
-        choices: ["China", "Russia", "United States"],
+        question: "Which of the following is NOT a loop in JavaScript?",
+        choices: ["for loop", "while loop", "do-while loop"],
+        correctAnswer: 2
+    },
+    {
+        question: "What is the purpose of the 'this' keyword in JavaScript?",
+        choices: ["It refers to the current function being executed.", "It refers to the current object.", "It refers to the global object."],
         correctAnswer: 1
     },
     {
-        question: "What is the capital of Brazil?",
-        choices: ["Rio de Janeiro", "Brasilia", "Sao Paulo"],
-        correctAnswer: 1
-    }
+        question: "What is the purpose of the 'typeof' operator in JavaScript?",
+        choices: ["It returns the data type of a value.", "It checks if a variable exists.", "It assigns a value to a variable."],
+        correctAnswer: 0
+    },
+    {
+        question: "Which of the following is NOT a way to declare a function in JavaScript?",
+        choices: ["function declaration", "function expression", "function assignment"],
+        correctAnswer: 2
+    },
+    {
+        question: "What is the purpose of the 'NaN' value in JavaScript?",
+        choices: ["It represents a value that is not a number.", "It represents a value that is undefined.", "It represents a value that is null."],
+        correctAnswer: 0
+    },
+    {
+        question: "What is the purpose of the 'try...catch' statement in JavaScript?",
+        choices: ["It allows you to catch and handle errors that occur in your code", "It allows you to skip over errors that occur in your code.", "It allows you to run code multiple times."],
+        correctAnswer: 0
+    },
 ];
 
 // Variables
