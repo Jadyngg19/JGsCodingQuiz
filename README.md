@@ -14,9 +14,9 @@ Technical Details:
 The JavaScript Quiz is built using HTML, CSS, and JavaScript. The quiz uses DOM manipulation to display the questions, timer, and high scores. The quiz also uses JavaScript's built-in setInterval() function to create a timer that counts down from one minute. The quiz uses arrays to store the questions, answer options, and correct answers. The high scores are stored in the browser's local storage using JavaScript's localStorage object
 
 ## Usage
-![Quiz Homepage](./JGsCodingQuiz/Images/Quiz-Homepage.png)
-![Example of Question](./JGsCodingQuiz/Images/Question-Example.png)
-![Inputting Initals on Highscore Leaderboard](./JGsCodingQuiz/Images/Inputting-Initials-On-Leaderboard.png)
-![High Score Leaderboard](xss./JGsCodingQuiz/Images/High-Score-Leaderboard.png)
+![Quiz Homepage](../JGsCodingQuiz/Images/Quiz-Homepage.png)
+![Example of Question](../JGsCodingQuiz/Images/Question-Example.png)
+![Inputting Initals on Highscore Leaderboard](../JGsCodingQuiz/Images/Inputting-Initials-On-Leaderboard.png)
+![High Score Leaderboard](../JGsCodingQuiz/Images/High-Score-Leaderboard.png)
 
 ## Link
